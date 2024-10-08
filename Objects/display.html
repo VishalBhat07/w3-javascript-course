@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="hello" style="border: 2px solid black; width: 400px">
+      Hello world
+    </div>
+
+    <button onclick="myFunction()">click me</button>
+
+    <script>
+      const person = {
+        Name: "Vishal Bhat",
+        Age: 18,
+        City: "Bengaluru",
+      };
+
+      // let text = "";
+
+      // for (let x in person) {
+      //   text += person[x] + ", ";
+      // }
+
+      // let myArray = Object.values(person);
+
+      // function myFunction() {
+      //   document.getElementById("hello").innerHTML = myArray;
+      // }
+
+      // let text = "";
+      // for (let [key, value] of Object.entries(person)) {
+      //   text += key + " " + value + "<br>";
+      // }
+
+      // function myFunction() {
+      //   document.getElementById("hello").innerHTML = text;
+      // }
+
+      let myString = JSON.stringify(person);
+
+      function myFunction() {
+        document.getElementById("hello").innerHTML = myString;
+      }
+    </script>
+  </body>
+</html>
